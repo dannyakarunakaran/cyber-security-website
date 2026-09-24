@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Threats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>Cyber Shield</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<section class="hero">
+    <h1>Common Cyber Threats</h1>
+
+    <p>
+        Click on a card to learn more about each cyber threat.
+    </p>
+</section>
+
+
+<div class="threat-grid">
+
+    <!-- PHISHING -->
+    <div class="flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front phishing">
+                <h2>🎣 Phishing</h2>
+                <p>Click to learn more</p>
+            </div>
+
+            <div class="flip-card-back">
+                <h2>🎣 Phishing</h2>
+
+                <p>
+                    Phishing is a cyber attack where attackers use
+                    fake emails, messages or websites to trick users
+                    into revealing personal information.
+                </p>
+
+                <h3>How to Stay Safe</h3>
+
+                <ul>
+                    <li>Do not click suspicious links.</li>
+                    <li>Check the sender's address.</li>
+                    <li>Never share passwords or OTPs.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- MALWARE -->
+    <div class="flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front malware">
+                <h2>🦠 Malware</h2>
+                <p>Click to learn more</p>
+            </div>
+
+            <div class="flip-card-back">
+                <h2>🦠 Malware</h2>
+
+                <p>
+                    Malware is harmful software designed to damage
+                    systems, disrupt operations or steal information.
+                </p>
+
+                <h3>How to Stay Safe</h3>
+
+                <ul>
+                    <li>Download software from trusted sources.</li>
+                    <li>Keep your system updated.</li>
+                    <li>Use security software.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- RANSOMWARE -->
+    <div class="flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front ransomware">
+                <h2>🔒 Ransomware</h2>
+                <p>Click to learn more</p>
+            </div>
+
+            <div class="flip-card-back">
+                <h2>🔒 Ransomware</h2>
+
+                <p>
+                    Ransomware is malware that prevents users from
+                    accessing files and may demand payment to restore access.
+                </p>
+
+                <h3>How to Stay Safe</h3>
+
+                <ul>
+                    <li>Keep important files backed up.</li>
+                    <li>Avoid suspicious attachments.</li>
+                    <li>Keep software updated.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- PASSWORD ATTACK -->
+    <div class="flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front password">
+                <h2>🔑 Password Attack</h2>
+                <p>Click to learn more</p>
+            </div>
+
+            <div class="flip-card-back">
+                <h2>🔑 Password Attack</h2>
+
+                <p>
+                    Attackers try to steal or guess passwords to gain
+                    access to user accounts.
+                </p>
+
+                <h3>How to Stay Safe</h3>
+
+                <ul>
+                    <li>Use strong and unique passwords.</li>
+                    <li>Enable two-factor authentication.</li>
+                    <li>Never share your password.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- DDOS -->
+    <div class="flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front ddos">
+                <h2>🌐 DDoS Attack</h2>
+                <p>Click to learn more</p>
+            </div>
+
+            <div class="flip-card-back">
+                <h2>🌐 DDoS Attack</h2>
+
+                <p>
+                    A DDoS attack overwhelms a website or online service
+                    with traffic, making it difficult for legitimate users
+                    to access.
+                </p>
+
+                <h3>How to Stay Safe</h3>
+
+                <ul>
+                    <li>Use network protection.</li>
+                    <li>Monitor unusual traffic.</li>
+                    <li>Use DDoS protection services.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- IDENTITY THEFT -->
+    <div class="flip-card" onclick="flipCard(this)">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front identity">
+                <h2>👤 Identity Theft</h2>
+                <p>Click to learn more</p>
+            </div>
+
+            <div class="flip-card-back">
+                <h2>👤 Identity Theft</h2>
+
+                <p>
+                    Identity theft occurs when someone uses another
+                    person's personal information without permission.
+                </p>
+
+                <h3>How to Stay Safe</h3>
+
+                <ul>
+                    <li>Keep personal information private.</li>
+                    <li>Use strong passwords.</li>
+                    <li>Be careful when sharing information online.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <p>
+        © 2026 Cyber Shield | Cyber Security Awareness Project
+    </p>
+</footer>
+
+
+<script>
+function flipCard(card) {
+    card.classList.toggle("flipped");
+}
+</script>
+
+</body>
+</html>

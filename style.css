@@ -1,0 +1,513 @@
+body {
+    font-family: Arial;
+    background-color: #f2f6ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Box style */
+  .box {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    transition: 0.3s;
+    border-left: 5px solid #1f4b99;
+}  
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1f3a;
+    padding: 15px 30px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #4da3ff;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0b1f3a, #1f4b99);
+    color: white;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+.phishing {
+    border-left-color: #ff4d4d;
+}
+
+.malware {
+    border-left-color: #ff9900;
+}
+
+.ransomware {
+    border-left-color: #8a2be2;
+}
+.tips {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tips h2 {
+    color: #0b1f3a;
+    margin-bottom: 15px;
+}
+
+.tips ul {
+    line-height: 2;
+    font-size: 16px;
+}
+.footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #0b1f3a;
+    color: white;
+    border-radius: 12px;
+}.quiz {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.quiz button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1f4b99;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background-color: #0b1f3a;
+}
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.quiz-box {
+    width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.quiz-box button {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    padding: 12px;
+    background-color: #1f4b99;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz-box button:hover {
+    background-color: #0b1f3a;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#score {
+    color: #0b1f3a;
+}
+/* Center threat cards */
+.container {
+    justify-content: center;
+}
+
+
+/* Hero shield image */
+.hero img {
+    margin-bottom: 15px;
+}
+
+
+/* Quiz button improvement */
+.quiz a button {
+    padding: 12px 25px;
+    background-color: #1f4b99;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quiz a button:hover {
+    background-color: #0b1f3a;
+}
+.quiz-box input,
+.quiz-box textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.quiz-box textarea {
+    height: 120px;
+}
+
+.quiz-box button {
+    padding: 12px 25px;
+    background-color: #1f4b99;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz-box button:hover {
+    background-color: #0b1f3a;
+}
+
+
+#successMessage {
+    margin-top: 15px;
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+.threat-detail {
+    width: 70%;
+    max-width: 850px;
+}
+
+.threat-detail h3 {
+    color: #1f4b99;
+    margin-top: 20px;
+}
+
+.threat-detail p {
+    line-height: 1.7;
+}
+
+.threat-detail ul {
+    line-height: 2;
+}
+
+/* ============================= */
+/* CYBER THREAT FLIP CARDS */
+/* ============================= */
+
+.threat-grid {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+}
+
+
+/* Flip Card */
+
+.flip-card {
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+
+/* JavaScript adds this class */
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Front and Back */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    border-radius: 15px;
+
+    backface-visibility: hidden;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    padding: 25px;
+}
+
+
+/* Front */
+
+.flip-card-front {
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-left: 6px solid #1f4b99;
+}
+
+.flip-card-front h2 {
+    color: #0b1f3a;
+}
+
+.flip-card-front p {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* Threat colors */
+
+.flip-card-front.phishing {
+    border-left-color: #ff4d4d;
+}
+
+.flip-card-front.malware {
+    border-left-color: #ff9900;
+}
+
+.flip-card-front.ransomware {
+    border-left-color: #8a2be2;
+}
+
+.flip-card-front.password {
+    border-left-color: #1f4b99;
+}
+
+.flip-card-front.ddos {
+    border-left-color: #009688;
+}
+
+.flip-card-front.identity {
+    border-left-color: #e91e63;
+}
+
+
+/* Back */
+
+.flip-card-back {
+    background: #0b1f3a;
+
+    color: white;
+
+    transform: rotateY(180deg);
+
+    overflow-y: auto;
+}
+
+.flip-card-back h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flip-card-back h3 {
+    color: #4da3ff;
+    margin-top: 20px;
+}
+
+.flip-card-back p {
+    line-height: 1.6;
+}
+
+.flip-card-back ul {
+    line-height: 1.8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .threat-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .flip-card {
+        height: 360px;
+    }
+}
+/* Answer Result */
+
+.answer-result {
+    font-weight: bold;
+    margin: 8px 0 20px 0;
+    min-height: 20px;
+}
+
+
+/* Disabled Buttons */
+
+.quiz-box button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+
+/* Score Popup */
+
+.score-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* Popup Box */
+
+.popup-content {
+    background-color: white;
+
+    padding: 30px;
+
+    width: 350px;
+    max-width: 80%;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+}
+
+
+/* Score */
+
+#finalScore {
+    color: #1e3a8a;
+    font-size: 32px;
+}
+
+
+/* Message */
+
+#finalMessage {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* Close Button */
+
+.close {
+    position: absolute;
+
+    top: 10px;
+    right: 18px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+.close:hover {
+    color: red;
+}

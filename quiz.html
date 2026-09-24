@@ -1,0 +1,110 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Security Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>Cyber Shield</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<div class="quiz-box">
+
+<h1>Cyber Security Quiz</h1>
+
+
+<h3>1. What is phishing?</h3>
+
+<button onclick="checkAnswer(true,1,this)">A) Fake Email</button>
+<button onclick="checkAnswer(false,1,this)">B) Antivirus</button>
+<button onclick="checkAnswer(false,1,this)">C) Hardware</button>
+<button onclick="checkAnswer(false,1,this)">D) Software</button>
+
+<p id="result1" class="answer-result"></p>
+
+
+<h3>2. Which is a strong password?</h3>
+
+<button onclick="checkAnswer(false,2,this)">A) 123456</button>
+<button onclick="checkAnswer(false,2,this)">B) password</button>
+<button onclick="checkAnswer(true,2,this)">C) D@nya2026#</button>
+<button onclick="checkAnswer(false,2,this)">D) yourname</button>
+
+<p id="result2" class="answer-result"></p>
+
+
+<h3>3. What does VPN help with?</h3>
+
+<button onclick="checkAnswer(true,3,this)">A) Online Privacy</button>
+<button onclick="checkAnswer(false,3,this)">B) Computer Speed</button>
+<button onclick="checkAnswer(false,3,this)">C) Battery Life</button>
+<button onclick="checkAnswer(false,3,this)">D) Storage</button>
+
+<p id="result3" class="answer-result"></p>
+
+
+<h3>4. Malware is:</h3>
+
+<button onclick="checkAnswer(false,4,this)">A) A Game</button>
+<button onclick="checkAnswer(true,4,this)">B) Malicious Software</button>
+<button onclick="checkAnswer(false,4,this)">C) A Browser</button>
+<button onclick="checkAnswer(false,4,this)">D) A Password</button>
+
+<p id="result4" class="answer-result"></p>
+
+
+<h3>5. What should you do with suspicious emails?</h3>
+
+<button onclick="checkAnswer(true,5,this)">A) Report and Delete</button>
+<button onclick="checkAnswer(false,5,this)">B) Open Links</button>
+<button onclick="checkAnswer(false,5,this)">C) Share Password</button>
+<button onclick="checkAnswer(false,5,this)">D) Reply Immediately</button>
+
+<p id="result5" class="answer-result"></p>
+
+
+<button onclick="restartQuiz()">🔄 Restart Quiz</button>
+
+</div>
+
+
+<!-- Score Popup -->
+
+<div id="scorePopup" class="score-popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup()">×</span>
+
+        <h2>🛡️ Quiz Completed!</h2>
+
+        <h1 id="finalScore"></h1>
+
+        <p id="finalMessage"></p>
+
+        <button onclick="restartQuiz()">🔄 Try Again</button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
